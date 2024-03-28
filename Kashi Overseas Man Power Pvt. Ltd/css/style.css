@@ -1,0 +1,593 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Root Variable */
+:root {
+   --darkSkyblue-color : #2e68b3;
+   --skyblue-color:#347dc0;
+}
+
+
+/* General css */
+
+.card-img {
+   padding: 2rem 1rem;
+
+ }
+
+ .card-img img {
+   border-radius: 2rem;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+/* Custom scrollbar */
+
+ ::-webkit-scrollbar{
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+ background-color:var(--skyblue-color);
+}
+
+::-webkit-scrollbar-thumb {
+ background-color: var(--darkSkyblue-color);
+}
+
+
+/* 
+ribban-bar css */
+
+.header .ribban-bar{
+   background-color: var(--darkSkyblue-color);
+   color: white;
+   font-weight: 600;
+   font-size: 14px;
+   text-decoration: none;
+   height: 40px;
+   line-height: 40px;
+
+  
+}
+
+.header .ribban-bar a{
+    text-decoration: none;
+    color: white;
+ }
+
+ .header .upload-resume a{
+    margin-top: 0.1rem;  
+    padding: 0.3rem 1rem; 
+    border: 2px dotted white;
+    background-color: white;
+    color: var(--skyblue-color);
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+ }
+
+ .header .upload-resume a:hover{
+   background-color: var(--skyblue-color);
+   color: white;
+ }
+
+ 
+
+ .header .ribban-bar .social-icon,
+ .header .ribban-bar .social-icon ul li {
+   display: inline;
+   margin-right: 1rem;
+
+ }
+
+
+ /* Navigation bar */
+
+ .header .nav-item {
+  background-color: white;
+  text-align: center;
+  position: relative;
+  padding-left: 0.6rem;
+ }
+
+ .header .nav-item .toggle{
+  position: absolute;
+  padding-left: 2rem;
+
+ }
+
+
+ .header .nav-item .nav-link{
+ position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--skyblue-color);
+ }
+
+
+
+ .header .nav-item .nav-link::after {
+   position: absolute;
+   content: '';
+   left: 0;
+   width: 0%;
+   height: 2px;
+   background-color: var(--darkSkyblue-color);
+   transition: 0.3s;
+   bottom: 0;
+ }
+
+ .header .nav-item .nav-link.active::after,
+ .header .nav-item .nav-link:hover::after{
+  width: 100%;
+ }
+
+
+
+.header .nav-item .nav-link.active,
+.header .nav-item .nav-link:hover{
+         color: red;
+}
+
+
+
+
+.header .dropdown ul li{
+ border-bottom: 1px solid gray;
+ padding-top: 0.5rem;
+ padding-bottom: 0.5rem;
+
+ 
+}
+
+.header .dropdown ul li a:focus,
+.header .dropdown ul li a:hover {
+  color: var(--skyblue-color);
+  background-color: white;
+
+}
+
+.header .dropdown:hover .dropdown-menu {
+  display: block;
+  cursor: pointer;
+  transition: 2s ease-in-out;
+
+}
+
+
+
+
+
+ .header button {
+  color: white;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color:var(--darkSkyblue-color);
+ }
+ .header button:focus {
+    border : none!important;
+    box-shadow: unset;
+ }
+
+
+  .header-scrolled {
+  position: fixed;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    -webkit-box-shadow: 0 4px 6px 0 rgba(12,0,46,.05);
+    box-shadow: 0 4px 8px 0 rgba(12,0,46,.05);
+
+ }
+
+ /* Notification bar */
+
+ .notification span,
+ .notification {
+    height: 3rem;
+    background-color: rgb(232, 249, 255);
+    line-height: 3rem;
+    font-weight: 700;
+    color: var(--darkSkyblue-color);
+    /* margin-top: 7rem; */
+ }
+
+
+ /* banner section */
+ 
+ .banner .carousel-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+ }
+
+ .job-seekar .card {
+  border-radius: 2rem;
+  /* border: none; */
+ }
+
+
+ .job-seekar .title {
+   font-size: 2rem;
+   font-weight: 600;
+ }
+
+ .job-seekar .opp-title {
+    color: var(--skyblue-color);
+   font-weight: 700;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+ }
+
+
+
+
+ /* our client section */
+
+ .our-client {
+   margin-top: 6rem;
+ 
+ }
+
+
+
+ .our-client .card{
+ height: 350px;
+ border-radius: 40px;
+ border: none;
+
+}
+ .our-client .card .card-link{
+  padding-top: 2rem;
+ 
+ }
+
+ .our-client .client-text h5{
+    font-weight: 600;
+    font-size: 1.7rem;
+    color: var(--darkSkyblue-color);
+ 
+ }
+
+
+
+
+ /* about section */
+
+ .about h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgb(31, 26, 26);
+ }
+
+ .about p {
+font-weight: 540;
+font-size: 1rem;
+text-align: justify;
+color: rgb(114, 113, 113);
+ }
+ 
+
+ .about .about-img {
+  margin-top: -8rem;
+  margin-left: 8rem;
+ 
+ }
+.about .about-btn  {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: var(--darkSkyblue-color);
+  margin-top: 1.6rem;
+  margin-bottom: 5rem;
+  transition: 0.5s ease-in-out;
+  font-weight: 700;
+  color: white;
+  
+   
+}
+
+.about .about-btn:focus,
+.about .about-btn:hover{
+  background-color: red;
+  box-shadow: none;
+
+   
+}
+
+
+
+ /* consultant section */
+
+ .Consultants {
+   background: url("../assets/img/consultant/cta2-bg.webp");
+   background-repeat: no-repeat;
+   background-position: center;
+
+
+ }
+
+ .Consultants .need-business {
+   padding: 6rem;
+   padding-bottom: 8rem;
+   
+ }
+ 
+
+ .Consultants .need-business h4{
+color: white;
+font-weight: 600;
+font-size: 1.8rem;
+
+}
+
+.Consultants .business-sm-text {
+  color: var(--darkSkyblue-color);
+}
+
+.Consultants .need-business .btn-together{
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: var(--darkSkyblue-color);
+  margin-top: 1.6rem;
+  margin-bottom: 5rem;
+  transition: 0.5s ease-in-out;
+  font-weight: 700;
+  color: white;
+
+}
+
+
+.Consultants .need-business .btn-together:focus,
+.Consultants .need-business .btn-together:hover{
+  background-color: red;
+  box-shadow: none;
+
+   
+}
+
+.question-business {
+  margin-top: -4rem;
+}
+ .question-business h5{
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+ 
+  }
+ 
+   /* jobs-skill section */
+
+
+  .Jobs-skill {
+    margin-top: 5rem;
+    
+    
+  
+  }
+
+
+  .Jobs-skill .list-group-item.active,
+  .Jobs-skill .list-group-item:hover{
+    background-color: var(--darkSkyblue-color);
+    color: white;
+  }
+  .Jobs-skill .list-group-item {
+    border: none;
+
+    padding: 1rem 2.1rem;
+    cursor: pointer;
+    background-color: #eef5ff;
+    font-weight: 530;
+  
+   
+  
+  }
+
+
+
+  .Jobs-skill h1{
+   font-size: 2rem;
+   font-weight: 700;
+   color: var(--darkSkyblue-color);
+
+  }
+
+  
+  .Jobs-skill p{
+    color: var(--darkSkyblue-color);
+ 
+   }
+
+  .Jobs-skill .job-skill-text {
+    padding: 2rem;
+    text-align: justify;
+    color: rgb(102, 101, 101);
+   
+  }
+
+
+  /* Quality Services section */
+
+
+  .quality-services {
+    margin-top: 5rem;
+    position: relative;
+    
+  }
+
+  .quality-services .services-icon{
+    font-size: 2.5rem;
+    color: var(--darkSkyblue-color);
+    
+  }
+
+  .quality-services h5{
+    font-weight: 600;
+    
+  }
+  
+  .quality-services p{
+    color: rgb(109, 108, 108);
+    font-weight: 540;
+    
+  }
+
+
+
+  .quality-services .quality-text {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 700;
+  }
+ 
+  .quality-services .quality-text h1{
+   color: var(--darkSkyblue-color);
+   font-weight: 600;
+   font-size: 2.2rem;
+  }
+
+  .quality-services .quality-text p {
+    font-weight: 500;
+    color: var(--darkSkyblue-color);
+
+  }
+
+
+  .quality-services a{
+    color: #347dc0;
+    font-weight: 600;
+ 
+   }
+
+  .quality-services .services-link{
+    width: 40px;
+   height: 40px;
+   line-height: 40px;
+   padding-left: 0.9rem;
+   border-radius: 100%;
+   transition: 0.5s ease-in-out;
+   color: #347dc0;
+ 
+   }
+
+  .quality-services .services-link:hover{
+  
+   background-color: var(--darkSkyblue-color);
+   border-radius: 100%;
+   color: white;
+
+  }
+
+
+  /* connect More  */
+
+  .connect_more {
+    margin-top: 5rem;
+  }
+
+  .connect_more h1 {
+    font-weight: 550;
+    color: var(--darkSkyblue-color);
+  }
+
+  .connect_more p {
+    text-align: justify;
+    font-weight: 530;
+    color: rgb(97, 97, 97);
+  }
+
+  .connect_more .connect-btn {
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: var(--darkSkyblue-color);
+    margin-top: 1.6rem;
+    margin-bottom: 5rem;
+    transition: 0.5s ease-in-out;
+    font-weight: 700;
+    color: white;
+    margin-left: 8rem;
+   
+  }
+
+
+ 
+   
+  .connect_more .connect-btn:focus,
+  .connect_more .connect-btn:hover{
+      background-color: red;
+      box-shadow: none;
+     
+     
+  }
+  
+  /* footer section */
+
+  .footer {
+    
+  }
+     
+
+ 
+
+
+ @media(max-width : 991px) {
+
+  /* ribban-bar */
+  .header .ribban-bar a,
+  .header .ribban-bar {
+   height: 200px;
+   text-align: center;
+   font-size: 1rem;
+   
+  
+  }
+
+
+  .header .ribban-bar .upload-resume {
+     display: none;
+   }
+
+  
+   .header .ribban-bar .social-icon,
+   .header .ribban-bar .social-icon ul li {
+     display: inline;
+     margin-left: 0.7rem;
+  
+   }
+/* 
+Navigation bar */
+
+   .header-scrolled {
+      padding-top: 2rem;
+   
+  
+   }
+
+  
+  
+
+  
+}
+
+
